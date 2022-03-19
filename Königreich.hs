@@ -27,9 +27,9 @@ steuerBescheid einwohner einkommen = do
   putStrLn $
     unlines
       [ "Einwohner = " ++ show einwohner,
-        "Einkommen = " ++ show einkommen,
-        "zvE       = " ++ show zvE,
-        "Steuer    = " ++ show steuerbetrag
+        "Einkommen = " ++ show einkommen ++ " Taler",
+        "zvE       = " ++ show zvE ++ " Taler",
+        "Steuer    = " ++ show steuerbetrag ++ " Taler"
       ]
   where
     zvE = zuVersteuerndesEinkommen einwohner einkommen
@@ -38,9 +38,9 @@ steuerBescheid einwohner einkommen = do
 main :: IO ()
 main = do
   let steuererklärungen =
-        [ (König, 85000),
-          (Bauer, 650),
-          (Adel, 15000),
-          (Leibeigener, 20)
+        [ (König, 10000),
+          (Bauer, 30),
+          (Adel, 100),
+          (Leibeigener, 15)
         ]
   mapM_ (uncurry steuerBescheid) steuererklärungen

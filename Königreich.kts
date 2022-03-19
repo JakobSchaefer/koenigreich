@@ -46,10 +46,10 @@ class Königreich {
 
 val königreich = Königreich()
 val einkommensteuererklärungen = listOf(
-    König(85_000),
-    Bauer(650),
-    Adel(15_000),
-    Leibeigener(20)
+    König(10_000),
+    Bauer(30),
+    Adel(100),
+    Leibeigener(15)
 )
 for (e in einkommensteuererklärungen) {
     königreich.steuerBescheid(e)
