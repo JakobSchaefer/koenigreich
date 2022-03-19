@@ -16,11 +16,11 @@ zuVersteuerndesEinkommen einwohner einkommen =
 steuer :: Einwohner -> Taler -> Taler
 steuer einwohner einkommen =
   let zvE = zuVersteuerndesEinkommen einwohner einkommen
-      grundsteuer = floor (fromInteger zvE * 0.1)
+      grundsteuer = max 1 (floor (fromInteger zvE * 0.1))
    in case einwohner of
         König -> 0
         Adel -> max 20 grundsteuer
-        _ -> max 1 grundsteuer
+        _ -> grundsteuer
 
 steuerBescheid :: Einwohner -> Taler -> IO ()
 steuerBescheid einwohner einkommen = do
