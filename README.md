@@ -1,7 +1,7 @@
 # Ausführen der Implementierung
 **Kotlin:**
 ```shell
-kotlinc -script Königreich.kts
+kotlin Königreich.kts
 ```
 
 **Haskell:**
