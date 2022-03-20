@@ -51,6 +51,7 @@ val einkommensteuererklärungen = listOf(
     Adel(100),
     Leibeigener(15)
 )
+
 for (e in einkommensteuererklärungen) {
     königreich.steuerBescheid(e)
 }

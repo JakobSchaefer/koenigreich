@@ -8,3 +8,6 @@ kotlin Königreich.kts
 ```shell
 runhaskell Königreich.hs
 ```
+
+# Quelle Aufgabenstellung.pdf
+Frank Wetzlar - Objektorientierte Programmierung - [Aufgabe 5](http://www.frank-wetzlar.info/info12/arbeitsBlaetter.php)
