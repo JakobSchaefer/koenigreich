@@ -9,5 +9,5 @@ kotlin Königreich.kts
 runhaskell Königreich.hs
 ```
 
-# Quelle Aufgabenstellung.pdf
+# Aufgabenstellung
 Frank Wetzlar - Objektorientierte Programmierung - [Aufgabe 5](http://www.frank-wetzlar.info/info12/arbeitsBlaetter.php)
