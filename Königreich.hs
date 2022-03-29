@@ -37,10 +37,10 @@ steuerBescheid einwohner einkommen = do
 
 main :: IO ()
 main = do
-  let steuererklärungen =
+  let einkommenssteuererklärungen =
         [ (König, 10000),
           (Bauer, 30),
           (Adel, 100),
           (Leibeigener, 15)
         ]
-  mapM_ (uncurry steuerBescheid) steuererklärungen
+  mapM_ (uncurry steuerBescheid) einkommenssteuererklärungen
